@@ -1,3 +1,3 @@
 Vue.js - Parte 2 (components, props, inject, provide e tests)
 
-Progresso: 39m
+Progresso: 56m
