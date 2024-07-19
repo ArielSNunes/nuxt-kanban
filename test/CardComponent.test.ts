@@ -5,7 +5,7 @@ import CardComponent from "~/components/CardComponent.vue";
 
 let board: Board;
 beforeEach(() => {
-    board = new Board("Projeto 01");
+    board = new Board(1, "Projeto 01");
     board.addColumn('Todo', true);
     board.addColumn('Doing', true);
     board.addColumn('Done', false);

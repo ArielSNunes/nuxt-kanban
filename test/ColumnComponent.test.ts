@@ -4,7 +4,7 @@ import ColumnComponent from "~/components/ColumnComponent.vue";
 import { Board } from "~/domain/entity/Board";
 
 test('Deve testar o componente de column', async function () {
-    const board = new Board("Projeto 01");
+    const board = new Board(1, "Projeto 01");
     board.addColumn('Todo', true);
     board.addColumn('Doing', true);
     board.addColumn('Done', false);
@@ -18,7 +18,7 @@ test('Deve testar o componente de column', async function () {
     expect(wrapper.get('.estimative').text()).toBe('6');
 });
 test('Deve testar o componente de column para a segunda coluna', async function () {
-    const board = new Board("Projeto 01");
+    const board = new Board(1, "Projeto 01");
     board.addColumn('Todo', true);
     board.addColumn('Doing', true);
     board.addColumn('Done', false);

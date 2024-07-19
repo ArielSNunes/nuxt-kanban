@@ -4,7 +4,7 @@ import { Board } from "~/domain/entity/Board";
 import BoardComponent from "~/components/BoardComponent.vue";
 
 test('Deve testar o componente de board', async function () {
-    const board = new Board("Projeto 01");
+    const board = new Board(1, "Projeto 01");
     board.addColumn('Todo', true);
     board.addColumn('Doing', true);
     board.addColumn('Done', false);

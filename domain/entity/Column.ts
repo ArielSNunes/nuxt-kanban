@@ -1,9 +1,11 @@
+import { BaseEntity } from "~/domain/entity/BaseEntity";
 import { Card } from "~/domain/entity/Card";
 
-export class Column {
+export class Column extends BaseEntity {
     cards: Card[];
 
     constructor(readonly name: string, readonly hasEstimative: boolean) {
+        super();
         this.cards = [];
     }
 
